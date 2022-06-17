@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px dashed white;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(13, 159, 33, 0.3);
+}
+
+tr:hover {
+  background-color: rgba(31, 201, 88, 0.5);
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  background-color: rgba(13, 159, 33, 0.3);
+}

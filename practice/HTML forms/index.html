@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <a href="hugeform.html">Go to the huge form</a>
+    <form
+      name="my_form"
+      action="/action_page.php"
+      target="_blank"
+      method="GET"
+      autocomplete="on"
+      novalidate
+      accept-charset="UTF-8"
+    >
+      <fieldset>
+        <legend>Choose your weapons:</legend>
+        <input type="radio" id="html" name="lang" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="lang" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input type="radio" id="js" name="lang" value="JavaScript" checked />
+        <label for="js">JavaScript</label><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+
+    <form
+      name="dropdown-form"
+      action="#"
+      target="_blank"
+      method="POST"
+      autocomplete="off"
+    >
+      <fieldset>
+        <legend>And now a ride</legend>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="3" multiple>
+          <option value="honda">Honda</option>
+          <option value="toyota">Toyota</option>
+          <option value="hyundai">Hyuandai</option>
+          <option value="skoda">Skoda</option>
+          <option value="bmw">BMW</option></select
+        ><br />
+        <input type="submit" disabled />
+      </fieldset>
+    </form>
+
+    <form
+      name="calculator"
+      action="#"
+      target="_self"
+      method="get"
+      autocomplete="off"
+      oninput="price.value=`${parseInt(order.value)*7} KM`"
+    >
+      <fieldset>
+        <legend>Somthing to eat?</legend>
+        <input list="order" name="order" required />
+        <datalist id="order">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+        </datalist>
+        <span>* 7 =</span>
+        <output name="price" for="order"></output><br />
+        <input type="reset" />
+        <input type="submit" value="Bon appetit" />
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Image?!</legend>
+        <input
+          type="image"
+          src="img\Stevo Iliskovic.png"
+          width="48"
+          height="48"
+        /><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
