@@ -92,6 +92,16 @@ ul {
   width: 25%;
   font-weight: bold;
   font-size: 36px;
+  padding: 10px 20px;
+}
+
+.num-rating {
+  width: 100%;
+  text-align: center;
+}
+
+.star-rating {
+  color: gold;
 }
 
 .special-offer {
