@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  /* SETTING RELATED ARTICLES WIDHT TO 250px TO MATCH THE IMG WIDTH */
+  /* +20px RIGHT MARGIN */
+  grid-template-columns: 5vw 5fr 270px 5vw;
+  gap: 40px 5vw;
+  background-color: rgba(255, 182, 193);
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* NAVIGATION */
+.nav-container {
+  background-color: white;
+  grid-column: 1 / -1;
+}
+
+.navigation {
+  margin: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 3px;
+  background-color: rgba(255, 182, 193);
+  margin: 6px 0;
+}
+
+.nav-links a {
+  /* display: inline-block; */
+  /* padding: 10px 5px; */
+  margin-right: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  color: grey;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: white;
+  background-color: grey;
+}
+
+#language-form {
+  /* float: right; */
+  display: inline;
+  margin: 0 10px;
+}
+
+/* MAIN */
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+.main-header {
+  grid-column: 2 / span 2;
+}
+
+.clubs {
+  grid-column: 2;
+}
+
+.clubs-header {
+  position: relative;
+}
+
+.rates {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.flex-club {
+  display: flex;
+  align-items: center;
+}
+
+.club {
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.club:last-child {
+  margin-bottom: 0;
+}
+
+.club-icon {
+  padding: 10px;
+}
+
+#img-rating {
+  display: none;
+}
+
+.club-desc {
+  margin: 10px;
+  line-height: 1.4;
+  width: 40%;
+}
+
+#club-desc-num-rating {
+  display: none;
+}
+
+.rating {
+  width: 40%;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.num-rating {
+  /* width: 100%; */
+}
+
+.star-rating {
+  color: gold;
+}
+
+.special-offer {
+  color: white;
+  background-color: coral;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.visit-button {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 5vw;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* LATEST ARTICLES */
+.latest-articles {
+  /* SHIFTING IT DOWN RELATIVE TO CLUBS LIST */
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.article-box {
+  width: 250px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.article-box a:link,
+.article-box a:visited,
+.article-box a:hover,
+.article-box a:active {
+  text-decoration: none;
+}
+
+.article-title {
+  margin: 5px;
+}
+
+.articles-more {
+  display: block;
+  text-align: center;
+}
+
+/* MORE INFO */
+.more-info {
+  background-color: white;
+  padding: 15px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2 / span 2;
+}
+
+.more-info-header {
+  color: rgb(226, 117, 117);
+  grid-column: 2 / span 2;
+  border-bottom: 2px solid rgb(226, 117, 117);
+  line-height: 0.1em;
+}
+
+.more-info-text {
+  background-color: rgba(255, 182, 193);
+  padding-right: 10px;
+}
+
+.more-info p {
+  margin-bottom: 20px;
+}
+
+.visit-best-page {
+  display: block;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  height: 200px;
+  background-color: coral;
+  color: white;
+  font-size: 12px;
+  grid-column: 1 / -1;
+}
+
+.footer {
+  margin: 0 10vw;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 25px;
+}
+
+footer a:first-child {
+  padding-left: 0;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  /* RESETTING */
+  body {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .nav-container,
+  .main-header,
+  .clubs,
+  .more-info,
+  .more-info-header {
+    grid-column: 1;
+    padding: 0 10px;
+  }
+
+  .navigation,
+  .latest-articles {
+    margin: 0 auto;
+  }
+
+  /* SPECIAL STYLING */
+  .nav-links a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .more-info {
+    padding: 15px 30px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* RESETTING */
+  body {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .nav-container,
+  .main-header,
+  .clubs,
+  .more-info,
+  .more-info-header {
+    grid-column: 1;
+    padding: 0 10px;
+  }
+
+  .navigation,
+  .latest-articles {
+    margin: 0 auto;
+  }
+
+  .club {
+    margin: 0 0 50px;
+  }
+
+  .club-desc {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .rating {
+    width: 100%;
+    padding: 0;
+  }
+
+  .club .visit-button {
+    text-align: center;
+    margin: 10px 10px 20px;
+  }
+
+  .special-offer {
+    font-size: 14px;
+  }
+
+  /* SPECIAL STYLING */
+  .nav-links a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .club {
+    padding: 0;
+  }
+
+  .flex-club {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .ico-container {
+    grid-row: 1 / span 2;
+    align-self: stretch;
+    justify-self: stretch;
+    background-color: rgb(238, 238, 238);
+    /* padding: 20% 10%; */
+  }
+
+  .club-icon {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* SHUFFLE RATING POSITIONS */
+  #ico-rating {
+    display: block;
+  }
+
+  #club-rating {
+    display: none;
+  }
+
+  #club-desc-num-rating {
+    display: block;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .star-rating {
+    font-size: 18px;
+  }
+
+  .visit-button {
+    justify-self: stretch;
+  }
+
+  .more-info-header {
+    border: none;
+    line-height: normal;
+  }
+
+  .more-info {
+    padding: 15px 30px;
+  }
+
+  footer {
+    display: none;
+  }
+}

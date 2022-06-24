@@ -177,3 +177,18 @@ footer a:active {
   display: inline-block;
   padding: 25px;
 }
+
+/* GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 700px auto 1fr;
+  column-gap: 50px;
+}
+
+.navigation,
+header,
+.main-header,
+footer {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
