@@ -25,11 +25,14 @@
           <a href="#">Frequently Asked Questions</a>
           <a href="#">About US</a>
           <form id="language-form">
-            <select name="lang" id="lang">
-              <option value="en">English</option>
-              <option value="ru">Russian</option>
-              <option value="fr">French</option>
-            </select>
+            <div class="lang-select">
+              <img src="img/uk_flag.png" class="flag" />
+              <select name="lang" id="lang">
+                <option value="en">English</option>
+                <option value="ru">Russian</option>
+                <option value="fr">French</option>
+              </select>
+            </div>
           </form>
         </div>
       </div>
@@ -57,31 +60,31 @@
           </div>
           <div class="flex-club">
             <div class="ico-container">
-              <img
-                src="https://picsum.photos/75"
-                alt="divorced"
-                width="75"
-                height="75"
-                class="club-icon box-shadow"
-              />
-              <div id="ico-rating" class="rating">
-                <div class="star-rating">
-                  &#9733;&#9733;&#9733;&#9733;&#9733;
-                </div>
+              <div class="club-icon box-shadow">
+                <img
+                  src="https://picsum.photos/75"
+                  alt="divorced"
+                  width="75"
+                  height="75"
+                />
+              </div>
+            </div>
+            <div class="ico-rating-container">
+              <div class="ico-rating star-rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
             </div>
             <div class="club-desc">
               <div><strong>Divorced Club</strong></div>
               <div><small>Meet divorced ladies now</small></div>
-              <div id="club-desc-num-rating" class="num-rating">9.8</div>
+              <div class="num-rating club-desc-num-rating">9.8</div>
               <a href="#">Visit</a>
             </div>
-            <div id="club-rating" class="rating">
+            <div class="rating club-rating">
               <div class="num-rating">9.8</div>
               <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
-            <!-- VISIT BUTTON TOO TALL ??? -->
-            <!-- !!! NEEDED A FLEX-START VAULE -->
+            <!-- VISIT BUTTON TOO TALL ???  !!! NEEDED A FLEX-START VAULE -->
             <a href="#" class="visit-button box-shadow">Visit</a>
           </div>
         </li>
@@ -90,22 +93,32 @@
             <span>Top place for marital affairs!</span>
           </div>
           <div class="flex-club">
-            <img
-              src="https://picsum.photos/75"
-              alt="divorced"
-              width="75"
-              height="75"
-              class="club-icon box-shadow"
-            />
+            <div class="ico-container">
+              <div class="club-icon box-shadow">
+                <img
+                  src="https://picsum.photos/75"
+                  alt="divorced"
+                  width="75"
+                  height="75"
+                />
+              </div>
+            </div>
+            <div class="ico-rating-container">
+              <div class="ico-rating star-rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </div>
             <div class="club-desc">
-              <div><strong>Adulteress Club</strong></div>
+              <div><strong>Adultress Club</strong></div>
               <div><small>Looking for a quick way to have fun?</small></div>
+              <div class="num-rating club-desc-num-rating">9.7</div>
               <a href="#">Visit</a>
             </div>
-            <div class="rating">
+            <div class="rating club-rating">
               <div class="num-rating">9.7</div>
               <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
+            <!-- VISIT BUTTON TOO TALL ???  !!! NEEDED A FLEX-START VAULE -->
             <a href="#" class="visit-button box-shadow">Visit</a>
           </div>
         </li>
@@ -204,6 +217,13 @@
       </div>
     </footer>
 
-    <div class="cookies"></div>
+    <div class="cookies">
+      <p class="cookies-desc">
+        In order to give you a better service onlinemesage.com uses cookies.By
+        continuing to browse the site you are agreeing to our use of cookies.
+        <a href="#">More info</a>
+      </p>
+      <a href="#" class="agree-btn">I agree</a>
+    </div>
   </body>
 </html>
