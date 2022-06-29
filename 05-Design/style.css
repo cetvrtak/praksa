@@ -226,12 +226,10 @@ footer {
 
 .hero-photo {
   opacity: 0.5;
-  transition: transform 2s, height 2s, width 2s;
+  transition: transform 2s;
 }
 
 .hero-photo:hover {
   opacity: 1;
-  width: 484px;
-  height: 484px;
-  transform: translate(-22px, -22px);
+  transform: scale(1.1);
 }
