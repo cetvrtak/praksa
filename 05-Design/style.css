@@ -217,3 +217,21 @@ footer {
   font-size: 14px;
   color: #495057;
 }
+
+.hero-container {
+  width: 440px;
+  height: 440px;
+  overflow: hidden;
+}
+
+.hero-photo {
+  opacity: 0.5;
+  transition: transform 2s, height 2s, width 2s;
+}
+
+.hero-photo:hover {
+  opacity: 1;
+  width: 484px;
+  height: 484px;
+  transform: translate(-22px, -22px);
+}
