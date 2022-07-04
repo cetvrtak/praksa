@@ -29,7 +29,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: var(--grey-2);
+  color: var(--grey-dark);
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -152,7 +152,7 @@
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
-  color: var(--grey-3);
+  color: var(--grey-lightest);
   margin-bottom: 1.2rem;
 }
 
@@ -233,7 +233,7 @@
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: var(--grey-2);
+  color: var(--grey-dark);
   border-radius: 100px;
   font-weight: 600;
 }
@@ -304,4 +304,58 @@
   width: 3rem;
   height: 3rem;
   color: var(--primary-color);
+}
+
+/* ************************** */
+/* TESTIMONIALS SECTION */
+/* ************************** */
+.section-testimonials {
+  background-color: var(--tint-1);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  gap: 4.8rem 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: var(--grey-light);
+}
+
+.gallery {
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
 }

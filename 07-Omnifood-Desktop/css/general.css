@@ -34,9 +34,10 @@ Paragraph default: 1.6
   --shade-1: #cf711f;
   /* Accents: */
   /* Greys: */
-  --grey-1: #555;
-  --grey-2: #333;
-  --grey-3: #ddd;
+  --grey-dark: #333;
+  --grey-medium: #555;
+  --grey-light: #6f6f6f;
+  --grey-lightest: #ddd;
 
   /* Tags */
   --tag-color-vegetarian: #51cf66;
@@ -80,7 +81,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: var(--grey-1);
+  color: var(--grey-medium);
 }
 
 /* ************************** */
@@ -118,7 +119,7 @@ body {
 .heading-secondary,
 .heading-tertialry {
   font-weight: 700;
-  color: var(--grey-2);
+  color: var(--grey-dark);
   letter-spacing: -0.5px;
 }
 
@@ -177,7 +178,7 @@ body {
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
-  color: var(--grey-1);
+  color: var(--grey-medium);
 }
 
 .btn--outline:hover,
