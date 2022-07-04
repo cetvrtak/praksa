@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader GIF</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .animation-container {
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+
+      .obj {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+      }
+
+      .obj-1 {
+        background-color: cadetblue;
+        left: 0;
+        top: 0;
+        animation: anim-1 2s infinite;
+      }
+
+      .obj-2 {
+        background-color: antiquewhite;
+        right: 0;
+        top: 0;
+        border-radius: 50%;
+        animation: anim-2 2s infinite;
+      }
+
+      .obj-3 {
+        background-color: tan;
+        right: 0;
+        bottom: 0;
+        animation: anim-3 2s infinite;
+      }
+
+      .obj-4 {
+        background-color: darkorchid;
+        left: 0;
+        bottom: 0;
+        border-radius: 50%;
+        animation: anim-4 2s infinite;
+      }
+
+      @keyframes anim-1 {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          left: 150px;
+          top: 0px;
+          border-radius: 50%;
+        }
+        50% {
+          left: 150px;
+          top: 150px;
+          border-radius: 0%;
+        }
+        75% {
+          left: 0px;
+          top: 150px;
+          border-radius: 50%;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          border-radius: 0%;
+        }
+      }
+
+      @keyframes anim-2 {
+        0% {
+          right: 0px;
+          top: 0px;
+          border-radius: 50%;
+        }
+        25% {
+          right: 0px;
+          top: 150px;
+          border-radius: 0%;
+        }
+        50% {
+          right: 150px;
+          top: 150px;
+          border-radius: 50%;
+        }
+        75% {
+          right: 150px;
+          top: 0px;
+          border-radius: 0%;
+        }
+        100% {
+          right: 0px;
+          top: 0px;
+          border-radius: 50%;
+        }
+      }
+
+      @keyframes anim-3 {
+        0% {
+          right: 0px;
+          bottom: 0px;
+        }
+        25% {
+          right: 150px;
+          bottom: 0px;
+          border-radius: 50%;
+        }
+        50% {
+          right: 150px;
+          bottom: 150px;
+          border-radius: 0%;
+        }
+        75% {
+          right: 0px;
+          bottom: 150px;
+          border-radius: 50%;
+        }
+        100% {
+          right: 0px;
+          bottom: 0px;
+          border-radius: 0%;
+        }
+      }
+
+      @keyframes anim-4 {
+        0% {
+          left: 0px;
+          bottom: 0px;
+          border-radius: 50%;
+        }
+        25% {
+          left: 0px;
+          bottom: 150px;
+          border-radius: 0%;
+        }
+        50% {
+          left: 150px;
+          bottom: 150px;
+          border-radius: 50%;
+        }
+        75% {
+          left: 150px;
+          bottom: 0px;
+          border-radius: 0%;
+        }
+        100% {
+          left: 0px;
+          bottom: 0px;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="animation-container">
+        <div class="obj obj-1"></div>
+        <div class="obj obj-2"></div>
+        <div class="obj obj-3"></div>
+        <div class="obj obj-4"></div>
+      </div>
+    </div>
+  </body>
+</html>
